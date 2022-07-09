@@ -1,2 +1,1 @@
-# learn_zig
-learning zig
+Zigの勉強
