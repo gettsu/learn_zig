@@ -5,7 +5,7 @@ const assert = std.debug.assert;
 
 pub fn main() void {
     const one_plus_one: i32 = 1 + 1;
-    print("{}\n", .{one_plus_one});
+    print("1 + 1 = {}\n", .{one_plus_one});
 
     const seven_div_three: f32 = 7.0 / 3.0;
     print("7.0 / 3.0 = {}\n", .{seven_div_three});
@@ -31,4 +31,13 @@ pub fn main() void {
         @typeName(@TypeOf(optional_value)),
         optional_value,
     });
+}
+
+pub fn fib(n: i32) i32 {
+    if (n == 0) {
+        return 0;
+    } else if (n == 1) {
+        return 1;
+    }
+    return fib(n - 1) + fib(n - 2);
 }
