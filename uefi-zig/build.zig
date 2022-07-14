@@ -1,7 +1,6 @@
 const Builder = @import("std").build.Builder;
 const Target = @import("std").Target;
 const CrossTarget = @import("std").zig.CrossTarget;
-const builtin = @import("builtin");
 
 pub fn build(b: *Builder) void {
     const exe = b.addExecutable("bootx64", "src/main.zig");
