@@ -9,3 +9,5 @@ zig-out/
 efi/
 NvVars
 OVMF.fd
+OVMF_VARS.fd
+OVMF_CODE.fd
